@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Toolbar theme. -->
+    <style name="ToolBarStyle" parent="AppTheme">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+    <!-- TOOLBAR TITLE THEME -->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- on va ulitiser ce style dans ce activité en le fichier Manifest-->
+    </style>
+
+    <style name="carracterOverFlow">
+        <item name="android:color">@color/colorError</item>
+        <item name="android:textColor">@color/colorError</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+</resources>

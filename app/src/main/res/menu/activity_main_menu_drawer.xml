@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- tools:showIn="navigation_view">-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/activity_main_drawer_news"
+            android:icon="@drawable/rdv_icon"
+
+            android:title="@string/accueil" />
+    </group>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/activity_main_drawer_doctor"
+                    android:icon="@drawable/doctor_icon"
+                    android:title="@string/mes_docteurs" />
+                <item
+                    android:id="@+id/activity_main_drawer_medicament"
+                    android:icon="@drawable/icon_pill"
+                    android:title="@string/mes_medicaments" />
+            </group>
+
+
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/activity_main_drawer_about"
+                    android:icon="@drawable/information"
+                    android:title="@string/a_propos" />
+                <item
+                    android:id="@+id/activity_main_drawer_deconnect"
+                    android:icon="@drawable/logout"
+                    android:title="@string/se_deconnecter" />
+            </group>
+
+
+
+</menu>

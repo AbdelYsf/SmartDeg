@@ -1,0 +1,63 @@
+<android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abdelysf.mymanuelnavigationdrawar.utilitaire.GoogleMap.MapsActivity" />
+
+    <android.support.design.widget.FloatingActionButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/floatingActionButtonMapSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="36dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_search"
+        backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="36dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonMapPharmacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginEnd="110dp"
+
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/icons8_clini"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="60dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonMapDoctors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginStart="110dp"
+
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/icons8_medical_doctor"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp" />
+
+    </android.support.constraint.ConstraintLayout>

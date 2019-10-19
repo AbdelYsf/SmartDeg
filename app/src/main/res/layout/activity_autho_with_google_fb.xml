@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_login_gradients"
+    tools:context="com.example.abdelysf.mymanuelnavigationdrawar.controller.activities.AuthoWithGoogleFbActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="155dp"
+            android:src="@drawable/abdssamad22" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:onClick="login"
+            android:background="@drawable/background_button_white"
+            android:textColor="@drawable/buttonadd_text_color_selector"
+            android:text="Login" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background_button_white"
+            android:textColor="@drawable/buttonadd_text_color_selector"
+            android:onClick="register"
+            android:text="S'inscrire" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/loginGoogle"
+            android:layout_width="290dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+
+
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp">
+
+        </com.google.android.gms.common.SignInButton>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/loginFB"
+            android:layout_width="290dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingStart="15dp"
+
+            android:paddingTop="15dp" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

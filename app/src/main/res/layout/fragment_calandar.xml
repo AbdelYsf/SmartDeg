@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+   >
+    <!-- on definie le AppBarLayout-->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- on definie le collapsing toolBarLayout-->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/collapsingToolBarLayout"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/compactcalendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:compactCalendarBackgroundColor="@color/colorPrimary"
+                app:compactCalendarCurrentDayBackgroundColor="#B71C1C"
+                app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorPrimaryDark"
+                app:compactCalendarMultiEventIndicatorColor="#fff"
+                app:compactCalendarTargetHeight="250dp"
+                app:compactCalendarTextColor="#fff"
+                app:compactCalendarTextSize="12sp" />
+            <!-- on change le style dans fichier styles a "no ActionBar" et puis
+ on definie motre ToolBar commme ca /// apres le definition de style dans le fichier manifest  on va met le toolBar dans le collapsing layout-->
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <!-- ici on ajoute le NasetedScrollView et puis on va l'associer avec le collapsing toolBAR-->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nestedScrollView"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- d"auter element va etre ice -->
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_Rdv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!-- here floating action button  goes-->
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/fabToAddRdvActivity"
+        android:layout_margin="16dp"
+        backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/ic_add_floating_without_circel"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:fabSize="normal"
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|end"/>
+
+</android.support.design.widget.CoordinatorLayout>

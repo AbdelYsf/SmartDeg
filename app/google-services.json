@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1075866366465",
+    "firebase_url": "https://delegueapplication.firebaseio.com",
+    "project_id": "delegueapplication",
+    "storage_bucket": "delegueapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075866366465:android:2a768721e7224587",
+        "android_client_info": {
+          "package_name": "com.example.abdelysf.mymanuelnavigationdrawar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075866366465-33j6o16qqilnhpe12erqa7n77b6dh1qm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abdelysf.mymanuelnavigationdrawar",
+            "certificate_hash": "157a4e54cfe472297dc514dae50d4fc69b7b6192"
+          }
+        },
+        {
+          "client_id": "1075866366465-729e4su01hu2g0rekpv4i13c42p11ibo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmbwTx730ROcj1kt_aAWq4y1X0ppxXW6g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075866366465-729e4su01hu2g0rekpv4i13c42p11ibo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
