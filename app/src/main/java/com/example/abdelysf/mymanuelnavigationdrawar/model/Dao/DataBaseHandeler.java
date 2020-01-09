@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by abdel ysf on 14/01/2018.
+
  */
 
 public class DataBaseHandeler extends SQLiteOpenHelper {
@@ -277,8 +277,12 @@ public class DataBaseHandeler extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
         boolean state =false;
 
-        Log.i( "testDate",rdv.getDateRdv()+"//***//"+rdv.getTimeRdv() );
-
+        Log.i( "abdelllllah",rdv.getDateRdv()+"//***//"+rdv.getTimeRdv() );
+            String[] dateElement = rdv.getDateRdv().split("/");
+            if(dateElement[0].length()==1){
+                rdv.setDateRdv("0"+rdv.getDateRdv());
+            }
+        Log.i( "abdelllllah",rdv.getDateRdv()+"//***//"+rdv.getTimeRdv() );
         try {
             ContentValues values= new ContentValues(  );
             values.put( Constant.KEY_RDV_DOCTOR_NAME,rdv.getDoctorName() );

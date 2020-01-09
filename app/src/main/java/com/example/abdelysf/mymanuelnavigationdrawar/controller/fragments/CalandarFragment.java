@@ -91,7 +91,7 @@ public class CalandarFragment extends Fragment  {
             @Override
             public void onDayClick(Date dateClicked) {
                 List<Rdv> rdvList =dataBaseHandeler.getAllRdv( simpleDateFormat.format( dateClicked ) );
-
+                Log.i("abdelllllah",simpleDateFormat.format( dateClicked ));
                 if(rdvList.isEmpty()){
                     Snackbar.make( calendarView,"aucun RDV pour cette date",Snackbar.LENGTH_SHORT ).show();  ;
                 }else{

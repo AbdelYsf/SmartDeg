@@ -14,9 +14,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/abdssamad22"
+        android:icon="@mipmap/ic_launcher"
         android:label="SmartDeg"
-        android:roundIcon="@mipmap/abdssamad22"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data android:name="com.facebook.sdk.ApplicationId"

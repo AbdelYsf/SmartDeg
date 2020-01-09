@@ -24,10 +24,7 @@
 
 
             <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/activity_main_drawer_about"
-                    android:icon="@drawable/information"
-                    android:title="@string/a_propos" />
+
                 <item
                     android:id="@+id/activity_main_drawer_deconnect"
                     android:icon="@drawable/logout"
